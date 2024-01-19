@@ -2,6 +2,31 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.title { 
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  /* align-items: center; */
+}
+
+.information {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* this was first added and then replaced with center */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 52px;
+  /* align-items: center; */
+}
+
+.information div {
+  max-width: 200px;
+  text-align: center;
+  /* flex-wrap: wrap; */
+  /* although no visual changes, flex-wrap does not work on the children, only the container */
+  flex: 1;
+}
+
 img {
   width: 100px;
   height: 100px;
